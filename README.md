@@ -70,4 +70,4 @@ npm run preview
 
 ## Deploy
 
-https://tiendasport-tp2.vercel.app
+Aplicación publicada en Vercel: [https://tiendasport-tp2.vercel.app](https://tiendasport-tp2.vercel.app)
