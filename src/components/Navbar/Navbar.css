@@ -1,0 +1,329 @@
+.navbar {
+  width: 100%;
+  background: rgba(22, 32, 53, 0.82);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  color: white;
+  padding: 1.05rem 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1030;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.navbar-brand-link {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 0.35rem 0.65rem 0.35rem 0.35rem;
+  margin: -0.35rem 0 -0.35rem -0.35rem;
+  transition: background 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
+}
+
+.navbar-brand-link:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+.navbar-brand-link:active {
+  transform: translateY(0);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.navbar-brand-link:focus-visible {
+  outline: 2px solid rgba(56, 189, 248, 0.85);
+  outline-offset: 3px;
+}
+
+.navbar-logo-text {
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  transition: opacity 0.25s ease;
+}
+
+.navbar-brand-link:hover .navbar-logo-text {
+  opacity: 0.95;
+}
+
+.navbar-brand-link:hover .navbar-logo-text span {
+  background: linear-gradient(to right, #38bdf8, #7dd3fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar-logo-text span {
+  background: linear-gradient(to right, #0c4a6e, #0ea5e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: background 0.25s ease;
+}
+
+.navbar-logo-img {
+  height: 40px;
+  width: auto;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.navbar-brand-link:hover .navbar-logo-img {
+  transform: scale(1.05);
+  filter: brightness(1.08);
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 0.15rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.navbar-links a.active {
+  color: white;
+  background: rgba(14, 165, 233, 0.2);
+}
+
+.navbar-cart-item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-admin-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.4rem 1rem 0.4rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid rgba(125, 211, 252, 0.35);
+  background: rgba(14, 165, 233, 0.14);
+  color: white;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar-admin-pill:hover {
+  color: white;
+  background: rgba(14, 165, 233, 0.26);
+  border-color: rgba(125, 211, 252, 0.5);
+  transform: translateY(-1px);
+}
+
+.navbar-admin-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #bae6fd;
+  white-space: nowrap;
+}
+
+.user-avatar--admin {
+  background: linear-gradient(to right, #0ea5e9, #0369a1);
+}
+
+.nav-icon-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  color: rgba(255, 255, 255, 0.88);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+
+.nav-icon-svg {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-icon-btn:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.28);
+  transform: translateY(-1px);
+}
+
+.nav-icon-btn--login {
+  background: linear-gradient(to right, #0284c7, #075985);
+  border-color: rgba(14, 165, 233, 0.4);
+  box-shadow: 0 4px 16px rgba(14, 116, 178, 0.35);
+}
+
+.nav-icon-btn--login:hover {
+  filter: brightness(1.1);
+  background: linear-gradient(to right, #0ea5e9, #0284c7);
+  color: white;
+}
+
+.nav-icon-btn--outline {
+  background: transparent;
+  box-shadow: none;
+}
+
+.nav-icon-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #ef4444;
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  border: 2px solid rgba(22, 32, 53, 0.95);
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.navbar-user-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.35rem 0.85rem 0.35rem 0.35rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  max-width: 200px;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #0284c7, #075985);
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.navbar-welcome {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.82rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu-toggle {
+  display: none;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 0.4rem 0.65rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 1rem;
+    gap: 0.75rem;
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  .navbar-inner {
+    flex-wrap: wrap;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .navbar-links a {
+    display: block;
+    padding: 0.65rem 1rem;
+  }
+
+  .nav-icon-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .navbar-user {
+    width: 100%;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    justify-content: space-between;
+  }
+
+  .navbar-user-pill,
+  .navbar-admin-pill {
+    max-width: none;
+    flex: 1;
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nombre": "Hombre",
+    "descripcion": "Ropa y calzado deportivo para hombre",
+    "avatar": "/img/categorias/hombre.png"
+  },
+  {
+    "id": 2,
+    "nombre": "Mujer",
+    "descripcion": "Ropa y calzado deportivo para mujer",
+    "avatar": "/img/categorias/mujer.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Niños",
+    "descripcion": "Indumentaria y calzado infantil",
+    "avatar": "/img/categorias/niños.png"
+  },
+  {
+    "id": 4,
+    "nombre": "Running",
+    "descripcion": "Ropa técnica y calzado para correr",
+    "avatar": "/img/categorias/running.png"
+  }
+]

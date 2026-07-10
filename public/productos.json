@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "nombre": "Conjunto Deportivo Hombre",
+    "precio": 24500,
+    "descripcion": "Conjunto completo para entrenar: remera técnica y short liviano, ideal para uso diario.",
+    "categoriaId": 1,
+    "avatar": "/img/productos/conjunto-hombre.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Conjunto Deportivo Mujer",
+    "precio": 26900,
+    "descripcion": "Conjunto femenino de alto rendimiento con tela transpirable y calce cómodo.",
+    "categoriaId": 2,
+    "avatar": "/img/productos/conjunto-mujer.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Conjunto Deportivo Niños",
+    "precio": 18900,
+    "descripcion": "Indumentaria infantil resistente y cómoda para la escuela, el club o el parque.",
+    "categoriaId": 3,
+    "avatar": "/img/productos/conjunto-niños.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Conjunto Running Pro",
+    "precio": 31500,
+    "descripcion": "Set pensado para correr: prenda superior de secado rápido y calza de compresión.",
+    "categoriaId": 4,
+    "avatar": "/img/productos/conjunto-running.jpg"
+  }
+]
