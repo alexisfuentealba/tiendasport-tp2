@@ -25,7 +25,7 @@ El admin entra al panel y gestiona el catálogo. El usuario común solo compra y
 
 ## Repositorio
 
-[Completar link de GitHub cuando esté subido]
+https://github.com/alexisfuentealba/tiendasport-tp2
 
 ## Cómo levantar el proyecto
 
