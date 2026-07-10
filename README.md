@@ -70,4 +70,4 @@ npm run preview
 
 ## Deploy
 
-[Completar link cuando esté publicado]
+https://tiendasport-tp2.vercel.app
